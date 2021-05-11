@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing:border-box;
+}
+
+input[type=text], select, textarea {
+  width: 99%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: sans-serif;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: sans-serif;
+  color: #000;
+
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: #ccc;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top:60px;
+}
+
+input[type=submit]:hover {
+  background-color: #5fcf80;
+}
+
+.container {
+  border-radius: 5px;
+  background-image: url("assets/img/beakers-for-science-with-water.jpg");
+  opacity: 5;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.h1{
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  color: #5fcf80;
+}
+
+.nav01{
+  margin-left: 10px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .logo a {
+  color: #5fcf80;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+@media (max-width: 992px) {
+  #header .logo {
+    font-size: 28px;
+  }
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="h1">
+  <a href="index.html"><h1 class="h1">SNHSS POOTHDI </h1></a> <br>
+<h2>ADMISSION FORM</h2>
+</div>
+<div class="container">
+  <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdMThDWWcLdlMueF5MOoBQrME3bQirUhHLy-mmkFdri1ChJPg/formResponse">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">കുട്ടിയുടെ പേര് (മലയാളത്തില്‍)</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="entry.1560040978" placeholder="name of student in malayalam.." required >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">കുട്ടിയുടെ പേര് (ENGLISH)</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="entry.1238839265" placeholder="name of student in english.." required >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Fname">അച്ഛന്റെ പേര്</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Fname" class="form-control" name="entry.278969830" placeholder="name of father.." required >
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="Mname">അമ്മയുടെ പേര്</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Mname" class="form-control" name="entry.1973266489" placeholder="name of  Mother.." required >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Anumb">ആധാര്‍ നമ്പര്‍ / AADHAR NO</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="Anumb" class="form-control" name="entry.1983347955" placeholder="adhaar number.." required >
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="age">ജനനത്തീയതി</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="age" class="form-control" name="entry.1873231850" placeholder="date of birth.." required >
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="pnumb">ഫോണ്‍ നമ്പര്‍</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="pnumb" class="form-control" name="entry.1325927313" placeholder=" phone number.." required >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Gender">ആണ്‍/പെണ്‍</label>
+      </div>
+      <div class="col-75">
+        <select id="Gender" name="entry.1948989493" required>
+          <option value="ആണ്‍">ആണ്‍</option>
+          <option value="പെണ്‍">പെണ്‍</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Gender">പ്രവേശനം വേണ്ട ക്ലാസ്സ്</label>
+      </div>
+      <div class="col-75">
+        <select id="Gender" name="entry.890160211" required>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Gender">ഒന്നാം ഭാഷ</label>
+      </div>
+      <div class="col-75">
+        <select id="Gender" name="entry.2070415454" required>
+          <option value="മലയാളം">മലയാളം</option>
+          <option value="സംസ്കൃതം">സംസ്കൃതം</option>
+          <option value="ഉര്‍ദു">ഉര്‍ദു</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Gender">പഠിക്കാനുദ്ദേശിക്കുന്ന മീഡിയം</label>
+      </div>
+      <div class="col-75">
+        <select id="Gender" name="entry.1782301060" required>
+          <option value="മലയാളം">മലയാളം</option>
+          <option value="ഇംഗ്ലീഷ്">ഇംഗ്ലീഷ്</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Gender">APL/BPL</label>
+      </div>
+      <div class="col-75">
+        <select id="Gender" name="entry.1411112816" required>
+          <option value="APL">APL</option>
+          <option value="BPL">BPL</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Address">മേല്‍വിലാസം</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Address" name="entry.1445712138" placeholder="Address.." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Address">ഇപ്പോള്‍ പഠിക്കുന്ന സ്കൂള്‍</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="school" name="entry.913587384" placeholder="name of school" required>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit" value="Send message"   .. ok now you are done ..>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
